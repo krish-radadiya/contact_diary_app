@@ -1,6 +1,6 @@
 import 'package:contact_diary_app/utils/theme/theme_data.dart';
-import 'package:contact_diary_app/views/add_contact.dart';
-import 'package:contact_diary_app/views/homepage.dart';
+import 'package:contact_diary_app/views/add_contact_screen/views/add_contact.dart';
+import 'package:contact_diary_app/views/home_screen/views/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {

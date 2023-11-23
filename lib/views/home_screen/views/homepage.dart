@@ -31,7 +31,7 @@ class _homepageState extends State<homepage> {
             image: DecorationImage(
               fit: BoxFit.cover,
               image: NetworkImage(
-                'https://assets-v2.lottiefiles.com/a/0e30b444-117c-11ee-9b0d-0fd3804d46cd/A6t16MXhTI.gif',
+                'https://stories.freepiklabs.com/api/vectors/no-data/rafiki/render?color=&background=complete&hide=',
               ),
             ),
           ),
