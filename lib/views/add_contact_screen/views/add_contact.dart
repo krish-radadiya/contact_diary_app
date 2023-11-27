@@ -48,131 +48,138 @@ class _add_contactState extends State<add_contact> {
           ),
         ],
       ),
-      body: Stepper(
-        currentStep: Global.currentindex,
-        onStepContinue: () {
-          setState(() {
-            if (Global.currentindex != 3) {
-              Global.currentindex++;
-            }
-          });
-        },
-        onStepCancel: () {
-          setState(() {
-            if (Global.currentindex != 0) {
-              Global.currentindex--;
-            }
-          });
-        },
-        steps: [
-          Step(
-            state: (Global.currentindex == 0)
-                ? StepState.editing
-                : StepState.indexed,
-            isActive: (Global.currentindex == 0) ? true : false,
-            title: Text("enter name here..."),
-            content: Column(
-              children: [
-                Center(
-                  child: Container(
-                    margin: const EdgeInsets.all(20),
-                    padding: const EdgeInsets.all(10),
-                    alignment: Alignment.center,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        CircleAvatar(
-                          radius: 80,
-                          foregroundImage: FileImage(
-                            File(
-                              "${image?.path}",
+      body: Form(
+        onChanged: () {},
+        key: formKey,
+        child: Stepper(
+          currentStep: Global.currentindex,
+          onStepContinue: () {
+            setState(() {
+              if (Global.currentindex != 3) {
+                Global.currentindex++;
+              }
+            });
+          },
+          onStepCancel: () {
+            setState(() {
+              if (Global.currentindex != 0) {
+                Global.currentindex--;
+              }
+            });
+          },
+          steps: [
+            Step(
+              state: (Global.currentindex == 0)
+                  ? StepState.editing
+                  : StepState.indexed,
+              isActive: (Global.currentindex == 0) ? true : false,
+              title: Text("enter name here..."),
+              content: Column(
+                children: [
+                  Center(
+                    child: Container(
+                      margin: const EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(10),
+                      alignment: Alignment.center,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            radius: 80,
+                            foregroundImage: FileImage(
+                              File(
+                                "${image?.path}",
+                              ),
                             ),
                           ),
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            IconButton(
-                              onPressed: () async {
-                                image = await Global.picker.pickImage(
-                                  source: ImageSource.camera,
-                                );
-                                setState(() {
-                                  Global.imagePath = image!.path;
-                                });
-                              },
-                              icon: const Icon(
-                                Icons.camera_alt,
-                                size: 35,
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              IconButton(
+                                onPressed: () async {
+                                  image = await Global.picker.pickImage(
+                                    source: ImageSource.camera,
+                                  );
+                                  setState(() {
+                                    Global.imagePath = image!.path;
+                                  });
+                                },
+                                icon: const Icon(
+                                  Icons.camera_alt,
+                                  size: 35,
+                                ),
                               ),
-                            ),
-                            IconButton(
-                              onPressed: () async {
-                                image = await Global.picker.pickImage(
-                                  source: ImageSource.gallery,
-                                );
-                                setState(() {
-                                  Global.imagePath = image!.path;
-                                });
-                              },
-                              icon: const Icon(
-                                Icons.panorama,
-                                size: 35,
+                              IconButton(
+                                onPressed: () async {
+                                  image = await Global.picker.pickImage(
+                                    source: ImageSource.gallery,
+                                  );
+                                  setState(() {
+                                    Global.imagePath = image!.path;
+                                  });
+                                },
+                                icon: const Icon(
+                                  Icons.panorama,
+                                  size: 35,
+                                ),
                               ),
-                            ),
-                          ],
-                        )
-                      ],
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          Step(
-            state: (Global.currentindex == 1)
-                ? StepState.editing
-                : StepState.indexed,
-            isActive: (Global.currentindex == 1) ? true : false,
-            title: Text("enter details here..."),
-            content: Column(
-              children: [
-                TextFormField(
-                  keyboardType: TextInputType.name,
-                ),
-              ],
+            Step(
+              state: (Global.currentindex == 1)
+                  ? StepState.editing
+                  : StepState.indexed,
+              isActive: (Global.currentindex == 1) ? true : false,
+              title: Text("enter details here..."),
+              content: Column(
+                children: [
+                  TextFormField(
+                    controller: Global.firstEditingController,
+                    keyboardType: TextInputType.name,
+                  ),
+                ],
+              ),
             ),
-          ),
-          Step(
-            state: (Global.currentindex == 2)
-                ? StepState.editing
-                : StepState.indexed,
-            isActive: (Global.currentindex == 2) ? true : false,
-            title: Text("enter number here..."),
-            content: Column(
-              children: [
-                TextFormField(
-                  maxLength: 10,
-                  keyboardType: TextInputType.phone,
-                ),
-              ],
+            Step(
+              state: (Global.currentindex == 2)
+                  ? StepState.editing
+                  : StepState.indexed,
+              isActive: (Global.currentindex == 2) ? true : false,
+              title: Text("enter number here..."),
+              content: Column(
+                children: [
+                  TextFormField(
+                    controller: Global.numberEditingController,
+                    maxLength: 10,
+                    keyboardType: TextInputType.phone,
+                  ),
+                ],
+              ),
             ),
-          ),
-          Step(
-            state: (Global.currentindex == 3)
-                ? StepState.editing
-                : StepState.indexed,
-            isActive: (Global.currentindex == 3) ? true : false,
-            title: Text("enter email here..."),
-            content: Column(
-              children: [
-                TextFormField(
-                  keyboardType: TextInputType.emailAddress,
-                ),
-              ],
+            Step(
+              state: (Global.currentindex == 3)
+                  ? StepState.editing
+                  : StepState.indexed,
+              isActive: (Global.currentindex == 3) ? true : false,
+              title: Text("enter email here..."),
+              content: Column(
+                children: [
+                  TextFormField(
+                    controller: Global.emailEditingController,
+                    keyboardType: TextInputType.emailAddress,
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../utils/theme/provider/theme_provider.dart';
+import '../provider/theme_provider.dart';
 import '../provider/counter_provider.dart';
 
 class homepage extends StatelessWidget {
@@ -19,8 +19,8 @@ class homepage extends StatelessWidget {
               Provider.of<ThemeProvider>(context, listen: false).changeTheme();
             },
             icon: Icon(
-              (Provider.of<ThemeProvider>(context, listen: false)
-                          .theme
+              (Provider.of<ThemeProvider>(context, listen: true)
+                          .thememodel
                           .isDark ==
                       true)
                   ? Icons.sunny
@@ -31,43 +31,25 @@ class homepage extends StatelessWidget {
         title: Text("homepage"),
         centerTitle: true,
       ),
-      floatingActionButton: Consumer<CounterProvider>(
-        builder: (context, CounterProvider, _) => FloatingActionButton(
-          onPressed: () {
-            CounterProvider.increment();
-          },
-          child: Icon(Icons.add),
-        ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pushNamed('add');
+        },
+        child: Icon(Icons.add),
       ),
       body: Center(
-        child: Container(
-          height: h * 0.45,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: NetworkImage(
-                'https://stories.freepiklabs.com/api/vectors/no-data/rafiki/render?color=&background=complete&hide=',
-              ),
+          child: Container(
+        height: h * 0.45,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: NetworkImage(
+              'https://stories.freepiklabs.com/api/vectors/no-data/rafiki/render?color=&background=complete&hide=',
             ),
           ),
-          child: Consumer<CounterProvider>(
-            builder:
-                (BuildContext context, CounterProvider counterProvider, _) {
-              return Center(
-                child: Text(
-                  '${counterProvider.counter.count}',
-                  style: Theme.of(context).textTheme.displayMedium,
-                ),
-              );
-            },
-            // child: Text(
-            //   "${Provider.of<CounterProvider>(context, listen: false).counter.count}",
-
-            // ),
-          ),
         ),
-      ),
+      )),
     );
   }
 }
