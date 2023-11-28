@@ -1,3 +1,4 @@
+import 'package:contact_diary_app/views/contact_details/views/contact_details.dart';
 import 'package:contact_diary_app/views/home_screen/model/theme_model.dart';
 import 'package:contact_diary_app/views/home_screen/provider/theme_provider.dart';
 import 'package:contact_diary_app/views/home_screen/views/theme_data.dart';
@@ -40,6 +41,7 @@ void main() async {
           '/': (context) => const introduction_screen(),
           'home': (context) => const homepage(),
           'add': (context) => const add_contact(),
+          'details': (context) => Contact_Detail(),
         },
       ),
     ),

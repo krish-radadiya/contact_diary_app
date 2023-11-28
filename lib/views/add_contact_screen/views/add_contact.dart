@@ -1,7 +1,10 @@
 import 'dart:io';
 
+import 'package:contact_diary_app/views/add_contact_screen/model/contact_model/contact_model.dart';
+import 'package:contact_diary_app/views/add_contact_screen/provider/contact_provider/contact_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:provider/provider.dart';
 
 import '../../../utils/Global/global.dart';
 
@@ -29,21 +32,23 @@ class _add_contactState extends State<add_contact> {
             onPressed: () {
               if (formKey.currentState!.validate()) {
                 formKey.currentState!.save();
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text("Saved Successfully..."),
-                  ),
+                Contact contact_data = Contact(
+                  firstname: Global.firstname!,
+                  lastname: Global.lastname!,
+                  number: Global.number!,
+                  email: Global.email!,
                 );
-              } else {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text("Plese Enter Full Detail..."),
-                  ),
-                );
+
+                Provider.of<ContactProvider>(context, listen: false)
+                    .add_contact(contact: contact_data);
+                Navigator.of(context).pushNamed('home');
               }
+              Global.firstEditingController.clear();
+              Global.emailEditingController.clear();
+              Global.numberEditingController.clear();
             },
             icon: Icon(
-              Icons.check,
+              Icons.add,
             ),
           ),
         ],

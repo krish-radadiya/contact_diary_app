@@ -39,6 +39,8 @@ dependencies:
   provider:
   introduction_screen:
   shared_preferences: ^2.2.2
+  url_launcher:
+  share_plus:
 
 dev_dependencies:
   flutter_test:

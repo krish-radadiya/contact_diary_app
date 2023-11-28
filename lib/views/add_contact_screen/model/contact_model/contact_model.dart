@@ -1,11 +1,10 @@
-class contact {
-  
+class Contact {
   String firstname;
   String lastname;
   String number;
   String email;
 
-  contact({
+  Contact({
     required this.firstname,
     required this.lastname,
     required this.number,
