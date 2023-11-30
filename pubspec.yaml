@@ -41,6 +41,7 @@ dependencies:
   shared_preferences: ^2.2.2
   url_launcher:
   share_plus:
+  local_auth:
 
 dev_dependencies:
   flutter_test:

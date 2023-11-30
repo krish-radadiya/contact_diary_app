@@ -4,14 +4,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../model/theme_model.dart';
 
 class ThemeProvider extends ChangeNotifier {
-  ThemeModel thememodel;
+  ThemeModel themeModel;
 
-  ThemeProvider({required ThemeModel thememodel}) : thememodel = thememodel;
+  ThemeProvider({required this.themeModel});
 
   void changeTheme() async {
-    thememodel.isDark = !thememodel.isDark;
+    themeModel.isDark = !themeModel.isDark;
     SharedPreferences preferences = await SharedPreferences.getInstance();
-    preferences.setBool('isdark', thememodel.isDark);
+    preferences.setBool("is Dark", themeModel.isDark);
+
     notifyListeners();
   }
 }
