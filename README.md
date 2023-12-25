@@ -1,12 +1,12 @@
-![WhatsApp Image 2023-11-30 at 10 25 01 AM (1)](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/82f6a30d-31fd-4362-8d67-7fbca37cd808)
-![WhatsApp Image 2023-11-30 at 10 25 01 AM](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/f8677fc0-523e-4738-bfb2-b745c434b35c)
-![WhatsApp Image 2023-11-30 at 10 25 00 AM](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/79af1d0c-1db9-43d5-9abe-5d83133c97f9)
-![WhatsApp Image 2023-11-30 at 10 25 00 AM (1)](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/54ad45dd-b630-4c9e-846f-2903995ddca4)
-![WhatsApp Image 2023-11-30 at 10 24 59 AM (4)](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/6d082b1c-d7b2-4283-b708-3e5b14bb1b15)
-![image](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/85fc4a6f-94b6-4b22-b830-65584c7e3dbd)
-![WhatsApp Image 2023-11-30 at 10 24 59 AM (3)](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/61ae15ae-81cd-4ff3-871a-3daed0bcb0c9)
-![WhatsApp Image 2023-11-30 at 10 24 59 AM (2)](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/5275bfdf-da6b-4fb1-b389-3bada83106b7)
-![WhatsApp Image 2023-11-30 at 10 24 59 AM (1)](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/fe7fb044-11e9-44bc-aa7f-0e1624b30d01)
-![WhatsApp Image 2023-11-30 at 10 24 59 AM](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/599fef0a-5031-40fc-99a2-17aa648bdaf9)
-![WhatsApp Image 2023-11-30 at 10 24 58 AM (1)](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/08fcc900-8e00-4391-8a9c-c8d5d62c40f4)
-![WhatsApp Image 2023-11-30 at 10 24 58 AM](https://github.com/krish-radadiya/contact_diary_app/assets/113992828/c24383cc-7324-4f7f-a247-7bee164d4104)
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/82f6a30d-31fd-4362-8d67-7fbca37cd808" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/f8677fc0-523e-4738-bfb2-b745c434b35c" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/79af1d0c-1db9-43d5-9abe-5d83133c97f9" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/54ad45dd-b630-4c9e-846f-2903995ddca4" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/6d082b1c-d7b2-4283-b708-3e5b14bb1b15" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/85fc4a6f-94b6-4b22-b830-65584c7e3dbd" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/61ae15ae-81cd-4ff3-871a-3daed0bcb0c9" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/5275bfdf-da6b-4fb1-b389-3bada83106b7" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/fe7fb044-11e9-44bc-aa7f-0e1624b30d01" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/599fef0a-5031-40fc-99a2-17aa648bdaf9" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/08fcc900-8e00-4391-8a9c-c8d5d62c40f4" width="250">
+<img src="https://github.com/krish-radadiya/contact_diary_app/assets/113992828/c24383cc-7324-4f7f-a247-7bee164d4104" width="250">
